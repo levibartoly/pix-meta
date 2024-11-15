@@ -38,7 +38,7 @@
             margin-bottom: 20px;
         }
         .logo {
-            max-width: 80%;
+            width: 60%;
             height: auto;
         }
         .title {
@@ -52,14 +52,22 @@
             color: #555;
             margin-bottom: 20px;
         }
+        .details span {
+            font-weight: bold;
+        }
         .pix-container {
             background-color: #f9f9f9;
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
             margin-bottom: 20px;
-            word-wrap: break-word;
             font-size: 14px;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 80px;
+            overflow-y: auto;
+            word-break: break-all;
         }
         .copy-btn {
             padding: 10px 20px;
@@ -94,12 +102,13 @@
 
     <div class="title">Meta Ads - Novembro</div>
     <div class="details">
-        Valor: R$ 1.500,00<br>
-        Vencimento: 19/11/2024
+        <span>Cliente:</span> [nome do cliente]<br>
+        <span>Valor:</span> R$ 1.500,00<br>
+        <span>Vencimento:</span> 19/11/2024
     </div>
 
     <div class="pix-container" id="pixCode">
-        00020126360014BR.GOV.BCB.PIX0114+5531999999999204000053039865802BR5925NOME DO RECEBEDOR6010NOMEDACIDADE62070503***63041D3D
+        00020126360014BR.GOV.BCB.PIX0114+5531999999999204000053039865802BR5925NOME DO RECEBEDOR6010NOMEDACIDADE62070503***63041D3D00020126360014BR.GOV.BCB.PIX0114+5531999999999204000053039865802BR5925NOME DO RECEBEDOR6010NOMEDACIDADE62070503***63041D3D00020126360014BR.GOV.BCB.PIX0114+5531999999999204000053039865802BR5925NOME DO RECEBEDOR6010NOMEDACIDADE62070503***63041D3D
     </div>
 
     <button class="copy-btn" onclick="copyPix(this)">Copiar</button>
